@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header>
+    <h1>URL Shortener v2</h1>
+  </header>
+  <Form />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Form from './components/Form';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    Form,
   }
 }
 </script>
@@ -20,7 +21,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+}
+
+h1 {
+  color: #03045E;
+  font-size: 2.2rem;
 }
 </style>
